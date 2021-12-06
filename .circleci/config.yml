@@ -47,7 +47,7 @@ jobs:
       - docker/push:
           image: $DOCKER_LOGIN/$CIRCLE_PROJECT_REPONAME
           tag: 0.1.<< pipeline.number >>
-            deploy_aws_ecs:
+  deploy_aws_ecs:
     machine:
       image: ubuntu-2004:202101-01
     resource_class: arm.medium
